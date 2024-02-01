@@ -3595,19 +3595,32 @@ i.font60{
 	font-size:36px;
 }
 
-.f-box.f-icon-rounded i{
+.f-box.f-icon-rounded i img{
 	display:block;
-	text-align:center;
-	padding:22px;
-	width:80px;
-	height:80px;
+	/* text-align:center; */
+	/* padding:22px; */
+	height: 100% !important;
+	width: 100% !important;
 	border-radius:5px;
+	/* width: 120px !important;
+	height: 120px !important; */
+	
 }
 
 .f-box.f-border i{
 	border:solid 10px rgba(255,255,255,.1);
-	padding:12px;
+	/* padding:12px; */
 }
+.f-box.f-icon-rounded i{
+	border-radius:10px;
+	background-color: #fff;
+    width: 150px;
+	height: 80px;
+
+	-webkit-box-shadow: 5px 5px 30px 0px rgba(20,20,20,0.2);
+	-moz-box-shadow: 5px 5px 30px 0px rgba(20,20,20,0.2);
+	box-shadow: 5px 5px 30px 0px rgba(20,20,20,0.2);
+	}
 
 .f-box.f-icon-rounded:hover i{
 border-radius:10px;
