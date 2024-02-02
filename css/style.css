@@ -3606,7 +3606,17 @@ i.font60{
 	height: 120px !important; */
 	
 }
-
+.f-box.f-icon-rounded i {
+	display:block;
+	text-align:center;
+	/* padding:22px; */
+	/* height: 100% !important;
+	width: 100% !important; */
+	border-radius:5px;
+	width: 160px !important;
+	height: 100px !important;
+	
+}
 .f-box.f-border i{
 	border:solid 10px rgba(255,255,255,.1);
 	/* padding:12px; */
