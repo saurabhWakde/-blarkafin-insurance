@@ -1723,8 +1723,8 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: none;
-    outline: none;
+    /* border: none;
+    outline: none; */
 }
 
 .form-underline input[type=text], .form-underline textarea, .form-underline input[type=email], .form-underline select {

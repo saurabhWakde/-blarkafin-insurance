@@ -1,4 +1,54 @@
 $(document).ready(function() {
+
+let showPermanentAddress = $('#show_permanent_address');
+    
+  showPermanentAddress.html(` <div class="col-md-6 col-lg-3">
+  <div class="form-group pb-3">
+    <textarea name="" id="" class="form-control" cols="" rows="" placeholder="Address Line 1"></textarea>
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+  <div class="form-group pb-3">
+    <textarea name="" id=""  class="form-control" cols="" rows="" placeholder="Address Line 2"></textarea>
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-3">
+  <div class="form-group pb-3">
+    <textarea name="" id=""  class="form-control" cols="" rows="" placeholder="Address Line 3"></textarea>
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+  <div class="form-group pb-3">
+    <input class="form-control" type="" placeholder="Landmark">
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+  
+</div>
+<div class="col-md-6 col-lg-3">
+  <div class="form-group pb-3">
+    <input class="form-control" type="" placeholder="State">
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+  <div class="form-group pb-3">
+    <input class="form-control" type="" placeholder="City">
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+
+</div>
+<div class="col-md-6 col-lg-3">
+  <div class="form-group pb-3">
+    <input class="form-control" type="" placeholder="Pincode">
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+  <div class="form-group pb-3">
+    <input class="form-control" type="number" placeholder="Phone Number">
+    <div id="" class="text-danger mx-2"></div>
+  </div>
+</div>`);
+
+
+
+
+
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, "\\$&");
@@ -43,6 +93,16 @@ $(document).ready(function() {
         x.eq(currentTab).hide();
         currentTab += n;
 
+        // if (currentTab == 4) {
+        //   $("#nextBtn").prop("disabled", true);
+        // }
+        // else
+        // {
+        //   showTab(currentTab);
+
+        // }
+          showTab(currentTab);
+
         if (currentTab >= x.length) {
             // All form data is collected here
             var formData = {};
@@ -59,7 +119,7 @@ $(document).ready(function() {
                 success: function(response) {
                     if (response.valid) {
                         // Proceed to the next tab only if the response is valid
-                        showTab(currentTab);
+                        // showTab(currentTab);
                     } else {
                         // Display validation errors
                         $(".error-message").text(response.message);
@@ -75,7 +135,7 @@ $(document).ready(function() {
             return false;
         }
 
-        showTab(currentTab);
+        
     }
 
     function validateForm() {
