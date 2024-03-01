@@ -60,17 +60,6 @@ const header = () => {
                         >Health Insurance</a
                       >
                     </li>
-                    <li>
-                      <a href="terminsurance.html">Term Insurance</a>
-                    </li>
-                    <li>
-                      <a href="">Shop Insurance</a>
-                    </li>
-                    <li>
-                      <a href="travelinsurance.html"
-                        >Travel Insurance</a
-                      >
-                    </li>
                   </ul>
                 </li>
                 <li>

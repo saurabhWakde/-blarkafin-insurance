@@ -6,7 +6,7 @@ $(document).ready(function(){
     <div class="container">
         <div class="row">
             
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="widget">
                     <h5>About Us</h5>
                     BlarkaFin is a Professional Financial Services Company Based in India. We at BlarkaFin provide various financial services like Credit Card, Loan, Insurance, Mutual Fund Investments.
@@ -24,7 +24,7 @@ $(document).ready(function(){
                 </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-5">
                 <div class="widget">
                     <h5>Get In Touch</h5>
                     We're here to listen:
