@@ -322,6 +322,9 @@
                     <li>
                       <a href="">Mutual Funds<span></span></a>
                     </li>
+                    <li>
+                      <a href="">ICICI 3 in 1 Account<span></span></a>
+                    </li>
                   </ul>
                 </div>
                 <div class="de-flex-col">
@@ -365,19 +368,7 @@
                             <option value="Home Loan">Home Loan</option>
                             <option value="Business Loan">Business Loan</option>
                             <option value="Personal Loan">Personal Loan</option>
-                            <option value="Balance Transfer">
-                              Balance Transfer(BT)
-                            </option>
-                            <option value="Overdraft">Overdraft(OD)</option>
-                            <option value="MSME Loan">MSME Loan</option>
-                            <option value="SME Loan">SME Loan</option>
-                            <option value="Loan Against Property">
-                              Loan Against Property
-                            </option>
                             <option value="Vehicle Loan">Vehicle Loan</option>
-                            <option value="Educational Loan">
-                              Educational Loan
-                            </option>
                           </select>
                           <div id="loan_error" class="text-danger mx-2"></div>
                         </div>
@@ -451,6 +442,7 @@
                               class="text-danger mx-2"
                             ></div>
                           </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -497,6 +489,17 @@
                             class="text-danger mx-2"
                           ></div>
                         </div>
+                        <div class="form-group pb-3">
+                          <select name="martial_status" id="martial_status" class="form-control">
+                            <option value="null" selected disabled>Martial Status</option>
+                            <option value="married">Married</option>
+                            <option value="unmarried">Un Married</option>
+                          </select>
+                          <div
+                            id="martial_status_error"
+                            class="text-danger mx-2"
+                          ></div>
+                        </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group pb-3">
@@ -538,10 +541,24 @@
                             class="text-danger mx-2"
                           ></div>
                         </div>
+                        <div class="form-group pb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="mother_name"
+                            id="mother_name"
+                            placeholder="Mother's Name"
+                          />
+                          <div
+                            id="mother_name_error"
+                            class="text-danger mx-2"
+                          ></div>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
-
+<!-- 
                   <div class="tab">
                    <div class="row">
                     <div class="col-md-6 col-lg-3">
@@ -780,11 +797,11 @@
                     </div>
                    </div>
                   
-                  </div>
+                  </div> -->
 
                   <div class="tab">
                  <div class="row">
-                  <div class="col-md-6 col-lg-3">
+                  <!-- <div class="col-md-6 col-lg-3">
                     <div class="form-group pb-3">
                       <select
                         name="gender"
@@ -839,7 +856,7 @@
                     <div class="form-group pb-3">
                       <input type="text" class="form-control" placeholder="Monthly Rent">
                     </div>
-                  </div>
+                  </div> -->
                   <div class="col-12 mb-1">
                     <label for="" class="text-left text-[#2A2C5D] font-bold text-1xl">Present Address</label>
                   </div>
@@ -885,7 +902,7 @@
                       <div id="" class="text-danger mx-2"></div>
                     </div>
                   </div>
-                  <div class="col-12 mb-1">
+                  <!-- <div class="col-12 mb-1">
                     <label for="" class="text-left text-[#2A2C5D] font-bold text-1xl">Permanent Address</label>
                     <div class="form-check 
                     ">
@@ -894,7 +911,7 @@
                          Same as present address
                       </label>
                     </div>
-                  </div>
+                  </div> -->
                   <div id="show_permanent_address" class="row"></div>
                   <div class="row">
                     <div class="col-12 mb-1">
@@ -961,7 +978,21 @@
                             <p class="text-[0.9rem] font-semibold text-slate-400">
                               <select name="documents_name" id="documents_name">
                                 <option value="" selected disabled>--Select Documents--</option>
-                                <option value="adhar_card_doc">Adhar Card</option>
+                                <option value="">Pancard</option>
+                                <option value="adhar_card_doc">Adhar Card Front</option>
+                                <option value="adhar_card_doc">Adhar Card Back</option>
+                                <option value="">3 Year ITR </option>
+                                <option value="">1 Year Bank Statement</option>
+                                <option value="">Ownership Proof Residence</option>
+                                <option value="">Certificate of Incorporation</option>
+                                <option value="">GST Certificate/ MSME Certificate</option>
+                                <option value="">GST Return(Last 1 year)</option>
+                                <option value="">Office Address Proof</option>
+                                <option value="">MOA/AOA/MS</option>
+                                <option value="">ITR/Trade License</option>
+                                <option value="">Photo </option>
+                                <option value="">Other</option>
+
                                 <option value="pancard_doc">Pan Card</option>
                               </select>
                             </p>
@@ -1051,8 +1082,6 @@
                     <span class="step"></span>
                     <span class="step"></span>
                     <span class="step"></span>
-                    <span class="step"></span>
-
                   </div>
                 </form>
               </div>
@@ -1176,97 +1205,20 @@
             </div>
           </div>
         </section>
-      </div>
-      <!-- content close -->
-
-      <a href="#" id="back-to-top"></a>
-      <!-- footer begin -->
-      <footer class="footer-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="widget">
-                <h5>About Us</h5>
-                BlarkaFin is a Professional Financial Services Company Based in
-                India. We at BlarkaFin provide various financial services like
-                Credit Card, Loan, Insurance, Mutual Fund Investments.
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="widget">
-                <h5>Quick Link</h5>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="register.html">Registration</a></li>
-                  <li><a href="contact.html">Contact us</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="widget">
-                <h5>Get In Touch</h5>
-                We're here to listen:
-                <address class="s1">
-                  <span
-                    ><i class="fa fa-map-marker fa-lg"></i>08 W 36th St, Delhi ,
-                    India
-                  </span>
-                  <span
-                    ><i class="fa fa-phone fa-lg"></i
-                    ><a href="tel:+91 8341683476">+91-8341683476</a></span
-                  >
-                  <span
-                    ><i class="fa fa-envelope-o fa-lg"></i
-                    ><a href="mailto:info@blarkafin.com"
-                      >info@blarkafin.com</a
-                    ></span
-                  >
-                </address>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="subfooter">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="de-flex">
-                  <div class="de-flex-col">
-                    &copy; Copyright 2024 - Blarkafin Designed & Developed by
-                    <a href="https://zynovvatech.com"> ZynovvaTech</a>
-                  </div>
-
-                  <div class="de-flex-col">
-                    <div class="social-icons">
-                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                      <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- footer close -->
+        <!-- content close -->
+  
+        <a href="#" id="back-to-top"></a>
+        <!-- footer begin -->
+        <div id="footer-container"></div>>
+        <!-- footer close -->
+    
+    
     </div>
-
-
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+    
+    
+    
     <!-- Javascript Files
-================================================== -->
+    ================================================== -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jpreLoader.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1285,30 +1237,27 @@
     <script src="js/jquery.countdown.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/designesia.js"></script>
-    <script src="js/insurance-service.js"></script>
+    <script src="js/reuse/header.js"></script>
+    <script src="js/reuse/footer.js"></script>
+    <script src="js/reuse/call.js"></script>
+    <script src="js/reuse/counts.js"></script>
     <script src="js/custom/loan.js"></script>
-
     <script src="js/custom/loan-service.js"></script>
-
     <script>
-      $(function () {
+    $(function () {
         // jquery typed plugin
         $(".typed").typed({
-          stringsElement: $(".typed-strings"),
-          typeSpeed: 100,
-          backDelay: 1500,
-          loop: true,
-          contentType: "html", // or text
-          // defaults to false for infinite loop
-          loopCount: false,
-          callback: function () {
-            null;
-          },
-          resetCallback: function () {
-            newTyped();
-          },
+            stringsElement: $('.typed-strings'),
+            typeSpeed: 100,
+            backDelay: 1500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function () { null; },
+            resetCallback: function () { newTyped(); }
         });
-      });
-    </script>
-  </body>
-</html>
+    });
+    </script>      
+    </body>
+    </html>

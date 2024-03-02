@@ -68,6 +68,9 @@ const header = () => {
                 <li>
                   <a href="">Mutual Funds<span></span></a>
                 </li>
+                <li>
+                  <a href="">ICICI 3 in 1 Account<span></span></a>
+                </li>
               </ul>
             </div>
             <div class="de-flex-col">
